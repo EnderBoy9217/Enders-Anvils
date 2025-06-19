@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "enders-template",
+	"id": "enders-anvils",
 	"version": "${version}",
-	"name": "enders template",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Ender's Better Anvils",
+	"description": "Changes Anvil cost to use Amethyst shards instead of levels, also helps with the cost of repairing items.",
 	"authors": [
 		"EnderBoy9217"
 	],
@@ -12,18 +12,18 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "GPL-3.0",
-	"icon": "assets/enders-template/icon.png",
+	"icon": "assets/enders-anvils/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.enderboy9217.template.EndersTemplate"
+			"com.enderboy9217.anvils.EndersAnvils"
 		],
 		"fabric-datagen": [
-			"com.enderboy9217.template.EndersTemplateDataGenerator"
+			"com.enderboy9217.anvils.EndersAnvilsDataGenerator"
 		]
 	},
 	"mixins": [
-		"enders-template.mixins.json"
+      "enders-anvils.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
