@@ -88,7 +88,7 @@ public abstract class AnvilScreenHandlerMixin extends ForgingScreenHandler {
         ItemStack itemStack = this.input.getStack(0);
         int levelcost = this.levelCost.get();
         this.levelCost.set(
-                Math.max(Math.min(levelcost-1,10),1) // All costs must be greater than 1
+                Math.max(Math.min(levelcost-1,20),1) // All costs must be greater than 1, Cannot be 40 or greater
         );
     }
 
